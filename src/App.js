@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { TodoFn, PostCls } from './Components/data-grid';
+import { Button } from './Components/button/Button';
 import './App.css';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('todo');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="btn-group tabs" role="group" aria-label="Basic example">
+        <Button
+          onClick={() => setActiveTab('post')}
+          className={
+            activeTab === 'post' ? 'btn btn-primary' : 'btn btn-default'
+          }
         >
-          Learn React
-        </a>
-      </header>
+          Post
+        </Button>
+        <Button
+          onClick={() => setActiveTab('todo')}
+          className={
+            activeTab === 'todo' ? 'btn btn-primary' : 'btn btn-default'
+          }
+        >
+          Todo
+        </Button>
+      </div>
+      {activeTab === 'todo' ? <TodoFn /> : <PostCls />}
     </div>
   );
 }
