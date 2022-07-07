@@ -11,6 +11,6 @@
 
 # Yayınlama
 
-*Uygulamam:* [Netlify](https://curious-toffee-70162a.netlify.app/)
+**Uygulamam:** [Netlify](https://curious-toffee-70162a.netlify.app/)
 
 
