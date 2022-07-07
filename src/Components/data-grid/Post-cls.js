@@ -44,7 +44,7 @@ export class PostCls extends React.Component {
   renderTable = () => {
     return (
       <div>
-        <table>
+        <table className="table">
           <thead>
             <tr>
               <th scope="col">ID</th>
