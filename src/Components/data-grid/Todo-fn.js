@@ -8,7 +8,7 @@ export function TodoFn() {
   // const [activeTab, setActiveTab] = useState('todos');
   const todos = useFetch(TODOS);
 
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   const TableRow = (props) => {
     return (
