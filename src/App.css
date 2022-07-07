@@ -23,14 +23,31 @@
 /* Light & Dark Theme */
 
 #light {
-  background-color: #f3ebf6;
+  background: #f3ebf6;
+  transition: all 0.2s linear;
 }
 
 #dark {
-  background-color: #202124;
+  background: #202124;
   color: #fff;
+  transition: all 0.2s linear;
 }
 
 #dark .btn {
   color: #fff;
+}
+
+#dark .tableCls {
+  color: #fff;
+  background-color: #212529;
+  border-color: #373b3e;
+  transition: all 0.2s linear;
+}
+
+#dark .tableCls tbody tr:nth-of-type(odd) {
+  background-color: #2c3034;
+}
+
+#dark .table-dark {
+  transition: all 0.2s linear;
 }
