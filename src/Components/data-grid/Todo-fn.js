@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useFetch } from '../../Hooks/use-fetch';
+import { ThemeContext } from '../Helpers/Context';
 
 const TODOS = 'https://jsonplaceholder.typicode.com/todos';
 
 export function TodoFn() {
   // const [activeTab, setActiveTab] = useState('todos');
   const todos = useFetch(TODOS);
+
+  const { theme, setTheme } = useContext(ThemeContext);
 
   const TableRow = (props) => {
     return (
@@ -30,7 +33,13 @@ export function TodoFn() {
   const renderTable = () => {
     return (
       <>
-        <table className="table">
+        <table
+          className={
+            theme === 'dark'
+              ? 'table table-dark table-striped'
+              : 'table table-striped'
+          }
+        >
           <thead>
             <tr>
               <th scope="col">ID</th>
