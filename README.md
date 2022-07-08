@@ -11,10 +11,6 @@
 
 # Yayınlama
 
-Uygulamanızı yayınlamak için [Netlify](https://www.netlify.com/)'ı kullanabilirsiniz.
+**Uygulamam:** [Netlify](https://curious-toffee-70162a.netlify.app/)
 
-- Netlify'da oturum açtıktan sonra [New Site](https://app.netlify.com/start) sayfasına gidin.
-- Burada Github reponuza bağlı bir uygulama oluşturmalısınız.
-- [Bu](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) adımları izleyin.
-- Sizin için bir web sitesi oluşturacaktır.
-- Bu bağlantıyı reponuzun README.md'sinde paylaşın.
+
